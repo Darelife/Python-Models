@@ -27,3 +27,23 @@ ilocSeries = pd.Series([1, 2, 3, 4, 5], index=[x for x in "abcde"])
 # c    3
 # d    4
 # iloc is a method that allows you to access values by their position
+
+headSeries = pd.Series([1, 2, 3, 4, 5], index=[x for x in "abcde"])
+# To acess only the first n elements of the series: (default = 5)
+
+# print(headSeries.head(3))
+
+# a    1
+# b    2
+# c    3
+# dtype: int64
+
+tailSeries = pd.Series([1, 2, 3, 4, 5], index=[x for x in "abcde"])
+# To acess only the last n elements of the series: (default = 5)
+
+# print(tailSeries.tail(3))
+
+# c    3
+# d    4
+# e    5
+# dtype: int64
