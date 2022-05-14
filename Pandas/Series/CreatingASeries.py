@@ -51,3 +51,26 @@ series_from_dict = pd.Series({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5})
 # d    4
 # e    5
 # dtype: int64
+
+series1 = np.arange(10,15)
+series_from_math = pd.Series(data = series1**2, index = series1) 
+#there's also no need to write "data ="
+# print(series_from_math)
+
+# 10    100
+# 11    121
+# 12    144
+# 13    169
+# 14    196
+# dtype: int32
+
+array1 = np.array([10,20,30,40,50])
+series_from_np_array = pd.Series(array1, index = ["a", "b", "c", "d", "e"])
+# print(series_from_np_array)
+
+# a    10
+# b    20
+# c    30
+# d    40
+# e    50
+# dtype: int32
