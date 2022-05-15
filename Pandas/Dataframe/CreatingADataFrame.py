@@ -40,3 +40,30 @@ seriesDataFrame = pd.DataFrame({'Marks':Student_marks,'Age':Student_age})
 # Alex       80   20
 # Bob        90   22
 # Clarke     70   23
+
+#? Creating a Dataframe from a Dictionary of lists
+
+dict_list_dataFrame = pd.DataFrame({'Name':['Alex', 'Bob', 'Clarke'], 'Age':[20,22,23], 'Marks':[80,90,70]})
+# print(dict_list_dataFrame)
+
+#      Name  Age  Marks
+# 0    Alex   20     80
+# 1     Bob   22     90
+# 2  Clarke   23     70
+
+#? Creating a Dataframe from a Dictionary of Series
+
+Name = pd.Series(['Alex', 'Bob', 'Clarke'])
+English = pd.Series([80,90,70])
+Math = pd.Series([90,80,70])
+Chemistry = pd.Series([70,80,90])
+Physics = pd.Series([70,90,80])
+Ip = pd.Series([75,85,95])
+
+dict_series_dataFrame = pd.DataFrame({'Name':Name, 'English':English, 'Math':Math, 'Chemistry':Chemistry, 'Physics':Physics, 'Ip':Ip})
+# print(dict_series_dataFrame)
+
+#      Name  English  Math  Chemistry  Physics  Ip
+# 0    Alex       80    90         70       70  75
+# 1     Bob       90    80         80       90  85
+# 2  Clarke       70    70         90       80  95
