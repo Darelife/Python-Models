@@ -22,3 +22,13 @@ namingASeries.name = "my_series"
 # d    4
 # e    5
 # Name: my_series, dtype: int64
+
+dropSeriesValue = pd.Series([1, 2, 3, 4, 5], index=[x for x in "abcde"])
+dropSeriesValue.drop("a", inplace=True) # drop the value at index "a"
+# print(dropSeriesValue)
+
+# b    2
+# c    3
+# d    4
+# e    5
+# dtype: int64
