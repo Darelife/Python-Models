@@ -47,3 +47,35 @@ tailSeries = pd.Series([1, 2, 3, 4, 5], index=[x for x in "abcde"])
 # d    4
 # e    5
 # dtype: int64
+
+usingConditions = pd.Series([1,2,3,4,5], index = [x for x in "abcde"])
+# print(usingConditions) # Regular
+
+# a    1
+# b    2
+# c    3
+# d    4
+# e    5
+# dtype: int64
+
+# print(usingConditions<2) # Checks each value in the series and returns True as the value if it's less than 2
+
+# a     True
+# b    False
+# c    False
+# d    False
+# e    False
+# dtype: bool
+
+# print(usingConditions[usingConditions<2]) # Returns the values that are less than 2
+
+# a    1
+# dtype: int64
+
+# print(usingConditions[usingConditions>=2]) # Returns the values that are greater than or equal to 2
+
+# b    2
+# c    3
+# d    4
+# e    5
+# dtype: int64
