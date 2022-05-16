@@ -46,3 +46,12 @@ radd = dataFrame1.radd(dataFrame2) # DataFrame 2 + DataFrame 1
 # 0  120
 # 1  210
 # 2  170
+
+# You can also do dataFrame1 + dataFrame2, or dataFrame1 + 50, etc.
+
+# print(dataFrame1 == dataFrame2) # you can do >, >=, <, <=, ==, !=, etc.
+
+#      Age
+# 0  False
+# 1  False
+# 2  False
