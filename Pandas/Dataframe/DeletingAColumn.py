@@ -21,7 +21,7 @@ i = dataFrame.pop('Age')
 # 2  Clarke     70
 
 dataFrame.drop('Marks', axis=1, inplace=True)
-# print(dataFrame)
+#? print(dataFrame)
 
 #      Name
 # 0    Alex
@@ -30,3 +30,4 @@ dataFrame.drop('Marks', axis=1, inplace=True)
 
 student = {'Name':['Alex', 'Bob', 'Clarke'], 'Age':[20,22,23], 'Marks':[80,90,70]}
 dataFrame = pd.DataFrame(student)
+
